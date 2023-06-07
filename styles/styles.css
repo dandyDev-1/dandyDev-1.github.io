@@ -1,0 +1,251 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.job-experience,
+.skills,
+.about,
+.education {
+    margin: 20px;
+}
+
+.job,
+.certification {
+    margin-bottom: 10px;
+}
+
+.responsibilities {
+    list-style-type: none;
+}
+
+.dropdown-btn:hover {
+    background-color: grey;
+}
+
+.dropdown-btn {
+    background-color: #eee;
+    border: none;
+    color: #333;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    transition: background-color 1s ease;
+}
+
+.dropdown-content {
+    overflow: hidden;
+    padding: 10px;
+    max-height: 0;
+    transition: max-height 0.5s ease;
+}
+
+.dropdown-btn.active + .dropdown-content {
+    max-height: 1000px; /* Set a large enough value to accommodate the content */
+}
+
+img {
+    width: 350px;
+    height: 350px;
+}
+
+
+.about-text {
+    margin: auto;
+    white-space: normal;
+    width:50%;
+    text-align: center;
+
+}
+
+.about-info {
+    margin: auto;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
+
+}
+
+.large-group-title {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.p {
+    word-wrap: break-word;
+}
+
+li {
+    margin-top: 20px;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  height: 0;
+  transition: height 1s ease;
+  overflow-y: auto;
+  max-height: calc(100vh - 150px);
+
+}
+
+.container.show {
+  height: auto;
+}
+
+.container.show ul {
+  visibility: visible;
+  opacity: 1;
+}
+
+.container ul {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.container.show .large-group-title,
+.container.show hr,
+.container.show li {
+  animation-delay: 0.2s;
+}
+
+.container .large-group-title,
+.container hr,
+.container li {
+  animation: fade-in 0.5s ease-in-out;
+}
+
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.progress-bar {
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  height: 10px;
+  width: 100%;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+.progress {
+  background-color: green;
+  height: 100%;
+  width: 0;
+  transition: width 0.5s ease;
+}
+
+.progress-bar.red .progress {
+  background-color: red;
+}
+
+.skill-name {
+  cursor: pointer;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.popup.show {
+  display: block;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.popup-content {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  max-width: 300px;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.9);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.popup.show .popup-content {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.skill-category {
+  flex: 1;
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  max-height: 380px;
+  overflow-y: auto;
+}
+
+.skill-name {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+}
+
+.category-title {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
