@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="styles/styles.css">
-  <title>Skills</title>
+  <link rel="stylesheet" type="text/css" href="/styles/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <title>About Me - Skills</title>
 </head>
 <body>
   <nav>
@@ -12,313 +13,200 @@
       <li><a href="index.html">Experience</a></li>
       <li><a href="skills.html">Skills</a></li>
       <li><a href="education.html">Education</a></li>
-      <li><a href="about.html">About Me</a></li>
     </ul>
   </nav>
+  <section class="">
+    <div class="container-fluid px-0">
+      <div class="row g-0">
+        <!-- First column -->
+        <div class="col-lg-6 vh-75">
+          <div class="about-me">
+            <h3 class="category-title">Tre Brown - DevOps Engineer</h3>
+            <div class="about-info">
+              <ul class="ul stack">
 
-  <div class="container show">
+                <li class="stack-item">
+                  <a href="https://github.com/dandyDev-1" target="_blank">
+                    <img src="/resources/github-mark.png" class="img-link"/>
+                  </a>
+                </li>
 
-    <h3 class="category-title">DevOps</h3>
-    <div class="skill-category">
+                <li class="stack-item">
+                   <a href="https://www.linkedin.com/in/tre-brown-69520b213/" target="_blank">
+                    <img src="/resources/LI-In-Bug.png" class="img-link"/>
+                  </a>
+                </li>
 
-      <div class="skill">
-        <div class="skill-name" onclick="showPopup('skill-1-4')">SQL - Tap for more info</div>
-        <progress class="progress-bar" value="85" max="100"></progress>
-        <div id="skill-1-4" class="popup">
-          <div class="popup-content">
-            <h3>SQL</h3>
-            <p>
-              SQL (Structured Query Language) is a language used for managing
-              and manipulating relational databases. It provides a standardized
-              way to interact with databases, allowing you to retrieve, insert,
-              update, and delete data. SQL is essential for data-driven applications
-              and plays a crucial role in data analysis, reporting, and maintaining
-              data integrity.
+                <li class="stack-item">
+                  <a href="mailto:trebrown2238@gmail.com">
+                    <img src="/resources/gmail-icon.png" class="img-link"/>
+                  </a>
+                </li>
+
+                <li class="stack-item">
+                  <a href="https://www.fiverr.com/dandyr?public_mode=true" target="_blank">
+                    <img src="/resources/fiverr_logo.png" class="img-link"/>
+                  </a>
+                </li>
+
+                <li class="stack-item">
+                  <a href="https://www.upwork.com/freelancers/~01c5d5b94c4f9a2ed4?viewMode=1" target="_blank">
+                    <img src="/resources/upwork-round-logo.png" class="img-link"/>
+                  </a>
+                </li>
+
+                <li class="stack-item">
+                  <a href="https://stackoverflow.com/users/1836" target="_blank">
+                    <img src="/resources/stackoverflow-round-logo.png" class="img-link"/>
+                  </a>
+                </li>
+
+                <li class="stack-item">
+                  <a href="https://www.kaggle.com/dandydataset" target="_blank">
+                    <img src="/resources/kaggle.png" class="img-link"/>
+                  </a>
+                </li>
+
+                <li class="stack-item">
+                  <a href="https://huggingface.co/dandyDev" target="_blank">
+                    <img src="/resources/hf-logo.png" class="img-link"/>
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+            <div class="download-button">
+              <a href="/resources/resume_4_5.pdf" download="tre-brown-resume.pdf">
+                <button class="btn btn-primary">Download Resume</button>
+              </a>
+            </div>
+          </div>
+          <hr/>
+          <div class="about-me">
+
+            <p class="about-text">
+              My name is Tre Brown. I am DevOps Engineer based in Canada.
+              with 4 years of experience in development, I have a strong passion
+              for combining software development and operations to streamline the
+              delivery of reliable applications, bots & processes.
             </p>
-            <p>Experience: 3 years</p>
-            <p>Proficiency: Advanced</p>
-            <span class="popup-close" onclick="hidePopup('skill-1-4')">&times;</span>
-          </div>
-        </div>
-      </div>
 
-      <div class="skill">
-        <div class="skill-name" onclick="showPopup('skill-1-1')">HTML</div>
-        <progress class="progress-bar" value="70" max="100"></progress>
-        <div id="skill-1-1" class="popup">
-          <div class="popup-content">
-            <h3>HTML</h3>
-            <p>
-              HTML (Hypertext Markup Language) is the standard markup language for creating web pages.
-              It provides the structure and semantic meaning of content on the web.
-              HTML uses tags to define elements such as headings, paragraphs, images, links, and more.
-              It serves as the backbone of every web page and is typically combined with CSS and JavaScript
-              to create interactive and visually appealing websites.
+            <p class="about-text">
+              On top of engineering, I also consider myself a trader/investor.
+              I invest in companies or ETF's that I think will perform well during a specific period
+              within that sector. I also speculate on prices based off economical events
+              such as earnings reports & SEC filings.
+              <br style="margin-bottom: 10px;">
+              Although controversial, I also keep a percentage of my money in cryptocurrencies
+              and speculate on the implementation of crypto into everyday society.
             </p>
-            <p>Experience: 3 years</p>
-            <p>Proficiency: Intermediate</p>
-            <span class="popup-close" onclick="hidePopup('skill-1-1')">&times;</span>
-          </div>
-        </div>
-      </div>
 
-      <div class="skill">
-        <div class="skill-name" onclick="showPopup('skill-1-2')">JavaScript (Node.js)</div>
-        <progress class="progress-bar" value="80" max="100"></progress>
-        <div id="skill-1-2" class="popup">
-          <div class="popup-content">
-            <h3>JavaScript (Node.js)</h3>
-            <p>JavaScript is a popular programming language primarily used for front-end web development.</p>
-            <p>Experience: 1 year</p>
-            <p>Proficiency: Beginner</p>
-            <span class="popup-close" onclick="hidePopup('skill-1-2')">&times;</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="skill">
-        <div class="skill-name" onclick="showPopup('skill-1-3')">PHP</div>
-        <progress class="progress-bar" value="60" max="100"></progress>
-        <div id="skill-1-3" class="popup">
-          <div class="popup-content">
-            <h3>PHP</h3>
-            <p>
-              PHP is a widely-used scripting language primarily designed for web development.
-              It can be embedded into HTML and is suitable for creating dynamic websites and
-              web applications. PHP offers a vast range of functionality, including database
-              integration, file manipulation, and server-side scripting. It powers popular
-              content management systems like WordPress and Drupal.
+            <p class="about-text">
+              My future aspirations are to own and operate firms that are essential
+              to parts of society such as commodities, infrastructure,
+              education, communication & logistics.
             </p>
-            <p>Experience: 1 year</p>
-            <p>Proficiency: Beginner</p>
-            <span class="popup-close" onclick="hidePopup('skill-1-3')">&times;</span>
+
           </div>
         </div>
-      </div>
 
-      <div class="skill">
-        <div class="skill-name" onclick="showPopup('skill-1-5')">CSS</div>
-        <progress class="progress-bar" value="55" max="100"></progress>
-        <div id="skill-1-5" class="popup">
-          <div class="popup-content">
-            <h3>CSS</h3>
-            <p>
-              CSS (Cascading Style Sheets) is a style sheet language used to describe the visual
-              presentation of a document written in HTML. It allows you to control the layout, design,
-              and appearance of web pages, including aspects like colors, fonts, spacing, and responsiveness.
-              CSS works alongside HTML to bring aesthetics and user-friendly interfaces to websites.
-            </p>
-            <p>Experience: 3 years</p>
-            <p>Proficiency: Intermediate</p>
-            <span class="popup-close" onclick="hidePopup('skill-1-5')">&times;</span>
+        <!-- First column -->
+
+        <!-- Second column -->
+        <div class="col-lg-6 vh-75">
+          <div class="container">
+
+            <h3 class="category-title">DevOps</h3>
+            <div class="skill-category">
+
+              <div class="skill">
+                <h6 class="skill-name">SQL</h6>
+                <progress class="progress-bar" value="85" max="100"></progress>
+              </div>
+
+              <div class="skill">
+                <h6 class="skill-name">HTML</h6>
+                <progress class="progress-bar" value="70" max="100"></progress>
+              </div>
+
+              <div class="skill">
+                <h6 class="skill-name">JavaScript (Node.Js)</h6>
+                <progress class="progress-bar green" value="80" max="100"></progress>
+              </div>
+
+              <div class="skill">
+                <h6 class="skill-name">CSS</h6>
+                <progress class="progress-bar" value="70" max="100"></progress>
+              </div>
+
+              <div class="skill">
+                <h6 class="skill-name">Solidity</h6>
+                <progress class="progress-bar" value="50" max="100"></progress>
+              </div>
+
+              <div class="skill">
+                <h6 class="skill-name">Bash</h6>
+                <progress class="progress-bar" value="60" max="100"></progress>
+              </div>
+
+              <div class="skill">
+                <h6 class="skill-name">JSON</h6>
+                <progress class="progress-bar" value="90" max="100"></progress>
+              </div>
+
+              <div class="skill">
+                <h6 class="skill-name">Python</h6>
+                <progress class="progress-bar" value="90" max="100"></progress>
+              </div>
+              </div>
+
+            <h3 class="category-title">Marketing</h3>
+            <div class="skill-category">
+
+                <div class="skill">
+                  <div class="skill-name">SEO</div>
+                  <progress class="progress-bar" value="80" max="100"></progress>
+                </div>
+
+                <div class="skill">
+                  <div class="skill-name">Email Marketing</div>
+                  <progress class="progress-bar" value="60" max="100"></progress>
+                </div>
+
+                <div class="skill">
+                  <div class="skill-name">Cold Calling</div>
+                  <progress class="progress-bar" value="50" max="100"></progress>
+                </div>
+
+                <div class="skill">
+                  <div class="skill-name">Marketing Analytics</div>
+                  <progress class="progress-bar" value="70" max="100"></progress>
+                </div>
+
+            </div>
+
+            <h3 class="category-title">Personal</h3>
+            <div class="skill-category">
+
+              <div class="skill">
+                <div class="skill-name">Scripting & Automation</div>
+                <progress class="progress-bar" value="95" max="100"></progress>
+              </div>
+
+              <div class="skill">
+                <div class="skill-name">Pursuit of Knowledge</div>
+                <progress class="progress-bar" value="100" max="100"></progress>
+              </div>
+
+            </div>
+
           </div>
         </div>
+        <!-- Second Column -->
       </div>
-
-      <div class="skill">
-        <div class="skill-name" onclick="showPopup('skill-1-6')">Solidity</div>
-        <progress class="progress-bar" value="40" max="100"></progress>
-        <div id="skill-1-6" class="popup">
-          <div class="popup-content">
-            <h3>Solidity</h3>
-            <p>
-              Solidity is a programming language specifically designed for developing smart contracts
-              on blockchain platforms, such as Ethereum. It enables the creation of self-executing
-              contracts that automatically enforce the terms and conditions defined within them.
-              Solidity is statically typed and facilitates secure and decentralized applications
-              (DApps) and blockchain-based systems.
-            </p>
-            <p>Experience: 1 year</p>
-            <p>Proficiency: Beginner</p>
-            <span class="popup-close" onclick="hidePopup('skill-1-6')">&times;</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="skill">
-        <div class="skill-name" onclick="showPopup('skill-1-7')">Bash</div>
-        <progress class="progress-bar" value="70" max="100"></progress>
-        <div id="skill-1-7" class="popup">
-          <div class="popup-content">
-            <h3>Bash</h3>
-            <p>
-              Bash is a shell scripting language used primarily in Unix and Linux environments.
-              It provides a command-line interface (CLI) for executing scripts that automate repetitive
-              tasks or perform system administration tasks. Bash scripting allows for powerful command
-              execution, conditional statements, loops, variables, and other features that enhance the
-              efficiency of system administration and automation.
-            </p>
-            <p>Experience: 3 years</p>
-            <p>Proficiency: Intermediate</p>
-            <span class="popup-close" onclick="hidePopup('skill-1-7')">&times;</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="skill">
-        <div class="skill-name" onclick="showPopup('skill-1-8')">JSON</div>
-        <progress class="progress-bar" value="100" max="100"></progress>
-        <div id="skill-1-8" class="popup">
-          <div class="popup-content">
-            <h3>Bash</h3>
-            <p>
-              JSON (JavaScript Object Notation) is a lightweight data interchange format.
-              It is language-independent and easy for humans to read and write,
-              while also being machine-readable. JSON is commonly used to transmit data between
-              a server and a web application, as well as for configuration files and storing
-              structured data. It is based on key-value pairs and supports arrays and nested objects.
-            </p>
-            <p>Experience: 4 years</p>
-            <p>Proficiency: Advanced</p>
-            <span class="popup-close" onclick="hidePopup('skill-1-8')">&times;</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="skill">
-        <div class="skill-name" onclick="showPopup('skill-1-9')">Python</div>
-        <progress class="progress-bar" value="100" max="100"></progress>
-        <div id="skill-1-9" class="popup">
-          <div class="popup-content">
-            <h3>Bash</h3>
-            <p>
-              Python is a versatile, high-level programming language known for its simplicity
-              and readability. It has a strong emphasis on code readability, making it an excellent
-              choice for both beginners and experienced programmers. Python's extensive standard library
-              and vast ecosystem of third-party libraries and frameworks make it suitable for a wide range
-              of applications, from web development to data analysis and machine learning.
-            </p>
-            <p>Experience: 4 years</p>
-            <p>Proficiency: Advanced</p>
-            <span class="popup-close" onclick="hidePopup('skill-1-9')">&times;</span>
-          </div>
-        </div>
-      </div>
-
     </div>
-
-    <h3 class="category-title">Marketing</h3>
-    <div class="skill-category">
-
-        <div class="skill">
-          <div class="skill-name" onclick="showPopup('skill-2-1')">SEO</div>
-          <progress class="progress-bar" value="80" max="100"></progress>
-          <div id="skill-2-1" class="popup">
-            <div class="popup-content">
-              <h3>SEO</h3>
-              <p>
-                Search Engine Optimization (SEO) is the practice of increasing the visibility and ranking of a website in search engine results.
-              </p>
-              <p>Experience: 3 years</p>
-              <p>Proficiency: Intermediate</p>
-              <span class="popup-close" onclick="hidePopup('skill-2-1')">&times;</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="skill">
-          <div class="skill-name" onclick="showPopup('skill-2-2')">Email Marketing</div>
-          <progress class="progress-bar" value="60" max="100"></progress>
-          <div id="skill-2-2" class="popup">
-            <div class="popup-content">
-              <h3>Email Marketing</h3>
-              <p>
-                Email marketing is a digital marketing strategy that involves sending targeted messages or
-                campaigns via email to a group of individuals or subscribers. It is a direct and cost-effective
-                method of reaching and engaging with a specific audience.
-              </p>
-              <p>Experience: 2 years</p>
-              <p>Proficiency: Intermediate</p>
-              <span class="popup-close" onclick="hidePopup('skill-2-2')">&times;</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="skill">
-          <div class="skill-name" onclick="showPopup('skill-2-3')">Cold Calling</div>
-          <progress class="progress-bar" value="30" max="100"></progress>
-          <div id="skill-2-3" class="popup">
-            <div class="popup-content">
-              <h3>Cold Calling</h3>
-              <p>
-                Cold calling is a sales technique where a sales representative makes unsolicited phone
-                calls to individuals or businesses with whom they have no prior relationship.
-                The objective of cold calling is to initiate a conversation, introduce a product or service,
-                and generate interest or potential leads.
-              </p>
-              <p>Experience: 1 year</p>
-              <p>Proficiency: Beginner</p>
-              <span class="popup-close" onclick="hidePopup('skill-2-3')">&times;</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="skill">
-          <div class="skill-name" onclick="showPopup('skill-2-4')">Marketing Analytics</div>
-          <progress class="progress-bar" value="70" max="100"></progress>
-          <div id="skill-2-4" class="popup">
-            <div class="popup-content">
-              <h3>Marketing Analytics</h3>
-              <p>
-                 Proficiency in using tools like Google Analytics,
-                 Google Ads, or Facebook Ads Manager to track and analyze marketing campaign performance.
-                 This includes setting up conversion tracking, monitoring ROI, and optimizing campaigns
-                 based on data insights.
-              </p>
-              <p>Experience: 2 year</p>
-              <p>Proficiency: Intermediate</p>
-              <span class="popup-close" onclick="hidePopup('skill-2-4')">&times;</span>
-            </div>
-          </div>
-        </div>
-
-    </div>
-
-
-    <h3 class="category-title">Personal Skills</h3>
-    <div class="skill-category">
-
-        <div class="skill">
-          <div class="skill-name" onclick="showPopup('skill-3-1')">Scripting & Automation</div>
-          <progress class="progress-bar" value="95" max="100"></progress>
-          <div id="skill-3-1" class="popup">
-            <div class="popup-content">
-              <h3>Scripting & Automation</h3>
-              <p>
-                Scripting and automation are two essential concepts in the field of computer programming
-                that aim to streamline and optimize various tasks and processes.
-              </p>
-              <p>Experience: 4 years</p>
-              <p>Proficiency: Advanced</p>
-              <span class="popup-close" onclick="hidePopup('skill-3-1')">&times;</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="skill">
-          <div class="skill-name" onclick="showPopup('skill-3-2')">Pursuit of Knowledge</div>
-          <progress class="progress-bar" value="100" max="100"></progress>
-          <div id="skill-3-2" class="popup">
-            <div class="popup-content">
-              <h3>Pursuit of Knowledge</h3>
-              <p>
-                Almost anything I put my mind to I can learn. I had no idea how to code about 2-3 years ago,
-                however I just kept persisting on learning and now I can develop with more than 6 languages.
-                <br>
-                Along the way I ran into knowledge barriers like Pre-Calculus and Adv Algebra for ML Models
-                but I wanted t learn more than I didnt so I ended up learning the math and developing the models
-              </p>
-              <p>Experience: All my life</p>
-              <p>Proficiency: Advanced</p>
-              <span class="popup-close" onclick="hidePopup('skill-3-2')">&times;</span>
-            </div>
-          </div>
-        </div>
-
-    </div>
-
-  </div>
-
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   <script src="scripts/script.js"></script>
 </body>
 </html>
