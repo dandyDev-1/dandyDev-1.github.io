@@ -1,7 +1,9 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
+
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 nav {
@@ -27,118 +29,40 @@ nav ul li a {
     text-decoration: none;
 }
 
-.job-experience,
-.skills,
-.about,
-.education {
-    margin: 20px;
-}
-
-.job,
-.certification {
-    margin-bottom: 10px;
-}
-
-.responsibilities {
-    list-style-type: none;
-}
-
-.dropdown-btn:hover {
-    background-color: grey;
-}
-
-.dropdown-btn {
-    background-color: #eee;
-    border: none;
-    color: #333;
-    padding: 10px;
-    cursor: pointer;
+table {
     width: 100%;
+}
+
+td img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+
+    vertical-align: middle;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    padding: 1rem;
     text-align: left;
-    transition: background-color 1s ease;
 }
 
-.dropdown-content {
-    overflow: hidden;
-    padding: 10px;
-    max-height: 0;
-    transition: max-height 0.5s ease;
+thead th {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #d5d1defe;
+    cursor: pointer;
+    text-transform: capitalize;
 }
 
-.dropdown-btn.active + .dropdown-content {
-    max-height: 1000px; /* Set a large enough value to accommodate the content */
+.company {
+  display: flex;
 }
 
-img {
-    width: 350px;
-    height: 350px;
-}
-
-
-.about-text {
-    margin: auto;
-    white-space: normal;
-    width:50%;
-    text-align: center;
-
-}
-
-.about-info {
-    margin: auto;
-    text-align: center;
-    margin-top: 35px;
-    margin-bottom: 35px;
-
-}
-
-.large-group-title {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.p {
-    word-wrap: break-word;
-}
-
-li {
-    margin-top: 20px;
-}
-
-.container {
-  position: relative;
-  overflow: hidden;
-  height: 0;
-  transition: height 1s ease;
-  overflow-y: auto;
-  max-height: calc(100vh - 150px);
-
-}
-
-.container.show {
-  height: auto;
-}
-
-.container.show ul {
-  visibility: visible;
-  opacity: 1;
-}
-
-.container ul {
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-
-.container.show .large-group-title,
-.container.show hr,
-.container.show li {
-  animation-delay: 0.2s;
-}
-
-.container .large-group-title,
-.container hr,
-.container li {
-  animation: fade-in 0.5s ease-in-out;
+.job-details {
+    height: 200px;
+    overflow: scroll;
 }
 
 
@@ -177,53 +101,6 @@ li {
   cursor: pointer;
 }
 
-.popup {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 999;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.popup.show {
-  display: block;
-  opacity: 1;
-  transition: opacity 0.3s ease;
-}
-
-.popup-content {
-  background-color: #fff;
-  border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  max-width: 300px;
-  opacity: 0;
-  transform: translate(-50%, -50%) scale(0.9);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.popup.show .popup-content {
-  opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.popup-close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-}
-
 .skill-category {
   flex: 1;
   margin: 20px;
@@ -248,4 +125,47 @@ li {
 
 .skill {
   margin-bottom: 20px;
+}
+
+.stack-item, .company-logo-item {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.download-button {
+  text-align: center;
+}
+
+
+.img-link {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.about-text {
+    margin: auto;
+    margin-bottom: 30px;
+    white-space: normal;
+    width: 75%;
+    text-align: center;
+
+}
+
+.about-info {
+    margin: auto;
+    text-align: center;
+    margin: 10px;
+}
+
+.edu-card {
+  width: 18rem;
+  margin: auto;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.book {
+    margin: auto;
 }
