@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="styles/styles.css">
-  <title>Experience</title>
+  <title>Job Experience</title>
+  <link rel="stylesheet" type="text/css" href="/styles/styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
   <nav>
@@ -12,108 +13,281 @@
       <li><a href="index.html">Experience</a></li>
       <li><a href="skills.html">Skills</a></li>
       <li><a href="education.html">Education</a></li>
-      <li><a href="about.html">About Me</a></li>
     </ul>
   </nav>
-  <div class="job-experience">
 
-    <div class="job">
-      <div class="dropdown">
-        <button class="dropdown-btn" onclick="toggleContent(1)">UPS SCS - Brokerage Admin Assistant - 7 Months</button>
-        <div id="1" class="dropdown-content container">
-          <h3 class="large-group-title">Job Responsibilities</h3>
+  <h3 class="category-title">Job Experience</h3>
+  <div class="container mt-4">
+    <div class="table-responsive">
+      <table id="job-experience" class="table table-striped table-bordered">
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Title - Click cell for more info</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr>
+            <td class="company">
+              <img class="company-logo-item" src="/resources/ups_logo.png" alt="UPS Logo" width="80" height="80">
+              <a href="https://www.ups.com/us/en/supplychain/Home.page" target="_blank">UPS Supply Chain Solutions</a>
+            </td>
+            <td data-toggle="modal" data-target="#job1Modal">
+              Brokerage Administration Assistant
+            </td>
+          </tr>
+
+          <tr>
+            <td class="company">
+              <img class="company-logo-item" src="/resources/iga_logo.png" alt="IGA Logo" width="80" height="80">
+              <a href="https://www.iga.net/en" target="_blank">IGA</a>
+            </td>
+            <td data-toggle="modal" data-target="#job2Modal">
+              Retail Sales Associate
+            </td>
+          </tr>
+
+          <tr>
+            <td class="company">
+              <img class="company-logo-item" src="/resources/upwork-round-logo.png" alt="UpWork Logo" width="80" height="80">
+              <a href="https://www.upwork.com/freelancers/~01c5d5b94c4f9a2ed4" target="_blank">Upwork</a>
+            </td>
+            <td data-toggle="modal" data-target="#job3Modal">
+              Freelance DevOps Engineer
+            </td>
+          </tr>
+
+          <tr>
+            <td class="company">
+              <img class="company-logo-item" src="/resources/fiverr_logo.png" alt="Fiverr Logo" width="80" height="80">
+              <a href="https://www.fiverr.com/dandyr?public_mode=true" target="_blank">Fiverr</a>
+            </td>
+            <td data-toggle="modal" data-target="#job4Modal">
+              SAAS Development & Marketing
+            </td>
+          </tr>
+
+          <tr>
+            <td class="company">
+              <img class="company-logo-item" src="/resources/ea_logo.png" alt="Executive Aquisition Logo" width="80" height="80">
+              <a href="https://www.executiveacquisitions.ca/" target="_blank">Executive Aquisitions</a>
+            </td>
+            <td data-toggle="modal" data-target="#job5Modal">
+              Direct Sales Associate
+            </td>
+          </tr>
+
+          <tr>
+            <td class="company">
+              <img class="company-logo-item" src="/resources/dss-logo.png" alt="DSS Logo" width="80" height="80">
+              <a href="https://www.diversifiedstaffing.com/" target="_blank">Diversified Staffing Solutions</a>
+            </td>
+            <td data-toggle="modal" data-target="#job6Modal">
+              Office Administrator & Reception
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <h3 class="category-title">Personal Projects</h3>
+  <div class="container mt-4">
+    <div class="table-responsive">
+      <table class="table table-striped table-bordered">
+        <thead>
+          <tr>
+              <th> title </th>
+              <th> stack </th>
+              <th> status </th>
+              <th> version </th>
+              <th> download </th>
+          </tr>
+      </thead>
+        <tbody>
+          <tr>
+            <td>
+              <a href="https://github.com/dandyDev-1/torchBot" target="_blank">torchBot</a>
+            </td>
+            <td>
+              <div>
+                <ul class="ul stack">
+                  <li class="stack-item"><img src="/resources/py.png"/></li>
+                  <li class="stack-item"><img src="/resources/json.png"/></li>
+                </ul>
+              </div>
+            </td>
+            <td>
+              <p class="status beta">Beta</p>
+            </td>
+            <td><strong>1.1</strong></td>
+            <td>
+              <a href="https://github.com/dandyDev-1/torchBot/archive/refs/heads/main.zip">
+                <button class="btn btn-primary" >Download</button>
+              </a>
+
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="https://github.com/dandyDev-1/EMA-Backtester" target="_blank">EMA Backtester</a>
+            </td>
+            <td>
+              <div>
+                <ul class="ul stack">
+                  <li class="stack-item"><img src="/resources/py.png"/></li>
+                </ul>
+              </div>
+            </td>
+            <td>
+              <p class="status beta">Complete</p>
+            </td>
+            <td><strong>1.0</strong></td>
+            <td>
+              <a href="https://github.com/dandyDev-1/EMA-Backtester/archive/refs/heads/main.zip">
+                <button class="btn btn-primary">Download</button>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="https://github.com/dandyDev-1/Mass-Batch-Backtester" target="_blank">Mass Batch Backtester</a>
+            </td>
+            <td>
+              <div>
+                <ul class="ul stack">
+                  <li class="stack-item"><img src="/resources/py.png"/></li>
+                </ul>
+              </div>
+            </td>
+            <td>
+              <p class="status beta">Complete</p>
+            </td>
+            <td><strong>1.0</strong></td>
+            <td>
+              <a href="https://github.com/dandyDev-1/Mass-Batch-Backtester/archive/refs/heads/main.zip">
+                <button class="btn btn-primary">Download</button>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="https://github.com/dandyDev-1/IP-Checker/blob/main/ipv4_checker.py" target="_blank">IP Checker</a>
+            </td>
+            <td>
+              <div>
+                <ul class="ul stack">
+                  <li class="stack-item"><img src="/resources/py.png"/></li>
+                </ul>
+              </div>
+            </td>
+            <td>
+              <p class="status beta">Incomplete</p>
+            </td>
+            <td><strong>1.0</strong></td>
+            <td>
+              <a href="https://github.com/dandyDev-1/Mass-Batch-Backtester/archive/refs/heads/main.zip">
+                <button class="btn btn-primary">Download</button>
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="modal fade" id="job1Modal" tabindex="-1" role="dialog" aria-labelledby="job1ModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="job1ModalLabel">Brokerage Administration Assistant  - UPS SCS</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h5>Nov 2022 - Apr 2023</h5>
           <hr>
-          <ul class="responsibilities">
-              <li>
-                  <div>
-                      <h4>Order Processing</h4>
-                      <p>
-                          I would assist in processing and managing customer orders. This can involve receiving purchase orders,
-                          verifying their accuracy, entering order details into the system,
-                          and coordinating with various departments to ensure timely fulfillment and delivery of orders.
-                      </p>
-                  </div>
-              </li>
-              <li>
-                  <div>
-                      <h4>Documentation and Record Keeping</h4>
-                      <p>
-                          Maintaining accurate and up-to-date records is crucial in supply chain management.
-                          I would be responsible for managing various documents, such as bills of lading, customs documentation,
-                          invoices, and shipping manifests. This may involve organizing and filing physical documents,
-                          as well as digitizing and maintaining electronic records.
-                      </p>
-                  </div>
-              </li>
-              <li>
-                  <div>
-                      <h4>Communication and Correspondence</h4>
-                      <p>
-                          I would handle internal and external communication related to brokerage activities.
-                          This can include responding to inquiries from clients, suppliers, and internal stakeholders,
-                          as well as facilitating communication between different parties involved in the supply chain, such as vendors, carriers, and customers.
-                      </p>
-                  </div>
-              </li>
-              <li>
-                  <div>
-                      <h4>Data Entry and Reporting</h4>
-                      <p>
-                          I would assist in data entry tasks, such as updating inventory records, tracking shipment statuses,
-                          and inputting financial information. I also may be responsible for generating regular reports, analyzing data,
-                          and presenting relevant information to management to support decision-making processes.
-                      </p>
-                  </div>
-              </li>
-              <li>
-                  <div>
-                      <h4>Compliance and Documentation</h4>
-                      <p>
-                          Supply chain management involves adherence to various regulations and compliance requirements.
-                          I would assist in ensuring that the brokerage division complies with applicable laws and industry regulations.
-                          This can include verifying the accuracy and completeness of documentation, assisting in audits or inspections,
-                          and maintaining compliance-related records.
-                      </p>
-                  </div>
-              </li>
-              <li>
-                  <div>
-                      <h4>Process Improvement</h4>
-                      <p>
-                          I was involved in identifying opportunities for process improvement and efficiency enhancement within the supply chain.
-                          This can include suggesting changes to existing workflows, implementing new tools or technologies, and participating in continuous improvement initiatives.
-                      </p>
-                  </div>
-              </li>
-          </ul>
-          <h3 class="large-group-title">Personal Achievements</h3>
-          <hr>
-          <ol type="1">
+          <ul class="job-details">
             <li>
               <div>
-                <h4>Inventory Management System</h4>
+                <h4>Documentation and Record Keeping</h4>
                 <p>
-                  Using Excel/Excel VBA and MS Office APIs, I connected my UPS email to an Excel session
-                  that would log messages to & from my superiors when requests were made for more office supplies.
-
-                  There would be daily logging of all items used in an office such as Pens, Keyboards, Etc as well as monthly reports.
-                  There would also be cost analysis implemented in the reports to see which items are redundant.
-
-              </p>
-            </div>
-          </li>
-          </ol>
+                  Maintaining accurate and up-to-date records
+                  is crucial in supply chain management. I
+                  would be responsible for managing various
+                  documents, such as bills of lading, customs
+                  documentation, invoices, and shipping manifests.
+                  This may involve organizing and filing physical
+                  documents, as well as digitizing and maintaining
+                  electronic records.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h4>Communication and Correspondence</h4>
+                <p>
+                   I would handle internal and external communication related to brokerage activities.
+                   This can include responding to inquiries from clients, suppliers, and internal stakeholders,
+                   as well as facilitating communication between different parties involved in the supply chain, such as vendors, carriers, and customers.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h4>Data Entry and Reporting</h4>
+                <p>
+                    I would assist in data entry tasks, such as updating inventory records, tracking shipment statuses,
+                    and inputting financial information. I also may be responsible for generating regular reports, analyzing data,
+                    and presenting relevant information to management to support decision-making processes.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h4>Compliance and Documentation</h4>
+                <p>
+                    Supply chain management involves adherence to various regulations and compliance requirements.
+                    I would assist in ensuring that the brokerage division complies with applicable laws and industry regulations.
+                    This can include verifying the accuracy and completeness of documentation, assisting in audits or inspections,
+                    and maintaining compliance-related records.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h4>Process Improvement</h4>
+                <p>
+                    I was involved in identifying opportunities for process improvement and efficiency enhancement within the supply chain.
+                    This can include suggesting changes to existing workflows, implementing new tools or technologies, and participating in continuous improvement initiatives.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="job">
-      <div class="dropdown">
-        <button class="dropdown-btn" onclick="toggleContent(2)">IGA - Retail Sales Associate - 1 Year 9 Months</button>
-        <div id="2" class="dropdown-content container">
-            <h3 class="large-group-title">Job Responsibilities</h3>
+  <div class="modal fade" id="job2Modal" tabindex="-1" role="dialog" aria-labelledby="job2ModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="job2ModalLabel">Retail Sales Associate - IGA</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h5>Sept 2020 - Nov 2021</h5>
           <hr>
-          <ul class="responsibilities">
+          <ul class="job-details">
             <li>
               <div>
                 <h4>Customer Assistance and Service</h4>
@@ -162,18 +336,29 @@
             </li>
           </ul>
         </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
       </div>
     </div>
+  </div>
 
-    <div class="job">
-      <div class="dropdown">
-        <button class="dropdown-btn" onclick="toggleContent(3)">Self-Employed - Linux Server Administrator - 4 Years</button>
-        <div id="3" class="dropdown-content container">
-          <h3 class="large-group-title">Job Responsibilities</h3>
+  <div class="modal fade" id="job3Modal" tabindex="-1" role="dialog" aria-labelledby="job3ModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="job3ModalLabel">Freelance DevOps Engineer - Upwork</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h5>Apr 2022 - Present</h5>
           <hr>
-          <ul class="responsibilities">
+          <ul class="job-details">
             <li>
               <div>
+
                 <h4>General Duties</h4>
                 <ul>
                   <li><p>Regularly perform system updates and apply security patches to maintain server security.</p></li>
@@ -218,196 +403,297 @@
                 </ul>
 
               </div>
-            </li>
+              </li>
           </ul>
-          <h3 class="large-group-title">Personal Achievements</h3>
-          <hr>
-          <ol type="1">
-            <li>
-              <h4>Deployed 6 linux servers</h4>
-              <p>I have setup and deployed 6 linux servers for various applications from locally run ML/AI models to webservers & gameservers</p>
-            </li>
-
-            <li>
-              <h4>Streamlined Linux Server Configuration</h4>
-              <p>Using knowledge from different types of deployments i streamlined the deployment process for each kind of depolyment</p>
-            </li>
-
-            <li>
-              <h4>Implemented backup/disaster recovery procedures</h4>
-              <p>Using various FOSS and common practices I implemented data recovery procedures for various linux-based clients</p>
-            </li>
-
-          </ol>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
-
-    <div class="job">
-      <div class="dropdown">
-          <button class="dropdown-btn" onclick="toggleContent(4)">Self-Employed - Python Backend Development - 3 Years</button>
-        <div id="4" class="dropdown-content container">
-          <h3 class="large-group-title">Possible Job Responsibilities</h3>
-          <ul class="responsibilities">
-
-            <li>
-              <div>
-                <h4>General Tasks</h4>
-                <ul>
-                  <li>Communicating with clients to understand project requirements and scope.</li>
-                  <li>Designing and architecting software solutions.</li>
-                  <li>Writing clean, efficient, and maintainable Python code.</li>
-                  <li>Developing and implementing software applications using Python.</li>
-                  <li>Collaborating with other developers and team members.</li>
-                  <li>Performing code reviews and providing constructive feedback.</li>
-                  <li>Testing and debugging code to ensure functionality and quality.</li>
-                  <li>Optimizing code for performance improvements.</li>
-                  <li>Integrating third-party APIs and services into applications.</li>
-                  <li>Creating and maintaining databases using Python libraries like SQLAlchemy.</li>
-                  <li>Implementing and documenting RESTful APIs.</li>
-                  <li>Working with version control systems like Git for code management.</li>
-                  <li>Writing comprehensive documentation for codebases and projects.</li>
-                  <li>Troubleshooting and resolving technical issues and bugs.</li>
-                  <li>Participating in client meetings and project discussions.</li>
-                  <li>Providing technical guidance and mentorship to junior developers.</li>
-                  <li>Keeping up-to-date with the latest Python trends and best practices.</li>
-                  <li>Managing project timelines and delivering tasks within deadlines.</li>
-                  <li>Researching and evaluating new tools and technologies for project improvement.</li>
-                  <li>Maintaining confidentiality and adhering to ethical and professional standards.</li>
-                  <li>Engaging in continuous learning and professional development.</li>
-                </ul>
-                <h4>Advanced Tasks</h4>
-                <ul>
-                  <li>Developing scalable and high-performance Python applications.</li>
-                  <li>Implementing advanced data structures and algorithms.</li>
-                  <li>Designing and building complex web applications using Python frameworks like Django or Flask.</li>
-                  <li>Building and deploying machine learning models using Python libraries such as scikit-learn or TensorFlow.</li>
-                  <li>Performing data analysis and manipulation on large datasets using Python libraries like Pandas or NumPy.</li>
-                  <li>Creating interactive data visualizations using libraries like Matplotlib or Plotly.</li>
-                  <li>Integrating natural language processing (NLP) techniques into applications using Python libraries like NLTK or spaCy.</li>
-                  <li>Implementing web scraping and data extraction using Python libraries like BeautifulSoup or Scrapy.</li>
-                  <li>Working with cloud platforms (such as AWS, Azure, or Google Cloud) to deploy and manage Python applications.</li>
-                  <li>Optimizing code for distributed computing and parallel processing.</li>
-                  <li>Implementing security measures and best practices in Python applications.</li>
-                  <li>Building and deploying RESTful APIs with advanced authentication and authorization mechanisms.</li>
-                  <li>Developing real-time applications using technologies like WebSockets or asynchronous frameworks like asyncio.</li>
-                  <li>Implementing continuous integration and deployment (CI/CD) pipelines for efficient software delivery.</li>
-                  <li>Designing and implementing microservices architectures using Python and related frameworks.</li>
-                  <li>Working with containerization technologies like Docker for application deployment.</li>
-                  <li>Implementing automated testing frameworks and practices, including unit tests, integration tests, and end-to-end tests.</li>
-                  <li>Building chatbots or conversational agents using Python libraries like Rasa or ChatterBot.</li>
-                  <li>Implementing recommendation systems and personalization algorithms using Python.</li>
-                  <li>Contributing to open-source Python projects and collaborating with the community.</li>
-                  <li>Providing expert-level consultancy and guidance on Python-related projects and technologies.</li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-          <h3 class="large-group-title">Personal Achievements</h3>
-          <hr>
-          <ol type="1">
-            <li>
-              <h4>Developed 3 APIs using flask/django</h4>
-              <p>I have developed APIs for existing applications and integrated them into app updates, with bug fixes.</p>
-            </li>
-            <li>
-              <h4>Deployed multiple trading algorithms</h4>
-              <p>I have been able to use my knowledge to develop event based algorithms that I use in my personal investments.
-                 They are nothing special, however since deployment I have made more money than I have lost.</p>
-            </li>
-          </ol>
-        </div>
-        </div>
-    </div>
-
-    <div class="job">
-      <div class="dropdown">
-        <button class="dropdown-btn" onclick="toggleContent(5)">Self-Employed - Social Media Marketing Manager - 3 Years</button>
-          <div id="5" class="dropdown-content container">
-          <h3 class="large-group-title">Possible Job Responsibilities</h3>
-          <ul class="responsibilities">
-            <li>
-              <div>
-                <h4>General Day-to-day Tasks</h4>
-                <ul>
-                  <li>Consulting with clients to understand their business objectives and social media marketing needs.</li>
-                  <li>Developing social media marketing strategies tailored to the client's goals and target audience.</li>
-                  <li>Creating and managing social media content calendars for clients.</li>
-                  <li>Curating and creating engaging and relevant content for social media platforms.</li>
-                  <li>Managing and optimizing social media accounts and profiles for clients.</li>
-                  <li>Planning and executing social media advertising campaigns on behalf of clients.</li>
-                  <li>Monitoring and analyzing social media metrics and performance to measure campaign effectiveness.</li>
-                  <li>Providing recommendations and insights based on social media analytics to improve client's social media presence.</li>
-                  <li>Engaging with the audience by responding to comments, messages, and inquiries on behalf of the client.</li>
-                  <li>Researching industry trends, social media best practices, and emerging platforms to stay up-to-date.</li>
-                  <li>Collaborating with clients and other freelancers, such as content creators and designers, to ensure cohesive brand messaging.</li>
-                  <li>Managing client budgets and effectively allocating resources for social media marketing efforts.</li>
-                  <li>Using social media listening tools to monitor brand mentions, conversations, and sentiment.</li>
-                  <li>Identifying and leveraging opportunities for user-generated content and community engagement.</li>
-                  <li>Providing regular reports and updates on social media performance to clients.</li>
-                  <li>Keeping abreast of relevant industry news and changes in social media algorithms or policies.</li>
-                  <li>Advising clients on crisis communication and managing reputation on social media platforms.</li>
-                  <li>Ensuring brand consistency and adherence to social media guidelines and client's brand voice.</li>
-                  <li>Building and maintaining relationships with clients as a trusted social media marketing partner.</li>
-                  <li>Continuously learning and acquiring new skills to stay competitive in the field of social media marketing.</li>
-                </ul>
-
-                <h4>Advanced Tasks</h4>
-                <ul>
-                  <li>Developing comprehensive social media marketing strategies that encompass multiple platforms and campaigns.</li>
-                  <li>Conducting in-depth market research and competitive analysis to identify unique opportunities for clients.</li>
-                  <li>Implementing advanced targeting and segmentation strategies for social media advertising campaigns.</li>
-                  <li>Optimizing social media accounts and profiles for maximum visibility, engagement, and conversion.</li>
-                  <li>Utilizing advanced analytics tools and techniques to track and measure the success of social media campaigns.</li>
-                  <li>Implementing A/B testing methodologies to continuously refine and improve social media ad performance.</li>
-                  <li>Utilizing data-driven insights to identify trends, patterns, and areas of improvement in social media strategies.</li>
-                  <li>Developing and executing influencer marketing strategies to leverage the power of social media influencers.</li>
-                  <li>Creating and managing social media partnerships and collaborations to amplify brand reach and exposure.</li>
-                  <li>Implementing social media listening and monitoring tools to proactively identify and address customer feedback or concerns.</li>
-                  <li>Developing and implementing crisis communication plans to handle potential reputation issues on social media.</li>
-                  <li>Advising clients on advanced social media growth tactics, including organic reach strategies and viral content campaigns.</li>
-                  <li>Staying up-to-date with emerging social media platforms and trends to recommend innovative strategies to clients.</li>
-                  <li>Providing advanced social media training and workshops to clients and their internal teams.</li>
-                  <li>Collaborating with clients to align social media marketing efforts with broader marketing and business objectives.</li>
-                  <li>Managing and coordinating a team of freelancers or contractors for social media content creation and execution.</li>
-                  <li>Evaluating and recommending social media management tools and technologies to streamline processes and enhance productivity.</li>
-                  <li>Developing thought leadership content and speaking at industry conferences or events to establish expertise.</li>
-                  <li>Managing multiple client accounts and projects simultaneously, ensuring timely delivery and client satisfaction.</li>
-                  <li>Establishing and maintaining long-term relationships with clients, acting as a trusted advisor and partner in their social media marketing efforts.</li>
-                </ul>
-
-                <h4>SEO Tasks</h4>
-                <ul>
-                  <li>Conducting comprehensive SEO audits and analysis of client websites to identify areas for improvement.</li>
-                  <li>Developing and implementing advanced on-page SEO strategies, including keyword research, content optimization, and metadata optimization.</li>
-                  <li>Performing advanced technical SEO audits and addressing issues related to crawlability, indexing, and website performance.</li>
-                  <li>Creating and executing off-page SEO strategies to build high-quality backlinks and improve website authority.</li>
-                  <li>Conducting in-depth competitor analysis to identify opportunities and develop competitive SEO strategies.</li>
-                  <li>Implementing advanced schema markup and structured data to enhance search engine visibility and rich snippets.</li>
-                  <li>Optimizing website speed, mobile responsiveness, and user experience (UX) for improved search engine rankings.</li>
-                  <li>Analyzing and interpreting SEO data using advanced analytics tools to extract actionable insights and recommendations.</li>
-                  <li>Implementing advanced local SEO strategies to optimize client websites for local search results and Google My Business listings.</li>
-                  <li>Developing and executing content marketing strategies aligned with SEO goals to drive organic traffic and engagement.</li>
-                  <li>Optimizing e-commerce websites for SEO, including product pages, category pages, and site architecture.</li>
-                  <li>Conducting advanced keyword research and analysis to identify long-tail and high-value keywords for optimization.</li>
-                  <li>Developing and implementing SEO strategies for international and multilingual websites, including hreflang tags and geotargeting.</li>
-                  <li>Monitoring and managing website migrations or redesigns to preserve and enhance search engine rankings.</li>
-                  <li>Implementing advanced SEO techniques for image and video optimization, including alt tags, file names, and schema markup.</li>
-                  <li>Utilizing advanced SEO tools and software to streamline workflows and analyze data effectively.</li>
-                  <li>Staying up-to-date with the latest search engine algorithms, industry trends, and best practices in SEO.</li>
-                  <li>Providing detailed SEO reports and performance analysis to clients, highlighting key metrics and recommendations.</li>
-                  <li>Collaborating with web developers, content writers, and other stakeholders to ensure SEO best practices are implemented.</li>
-                  <li>Monitoring and addressing technical SEO issues, such as crawl errors, broken links, and duplicate content.</li>
-                  <li>Conducting advanced SEO split testing and experimentation to optimize conversion rates and user engagement.</li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
   </div>
-  <script src="scripts/script.js"></script>
+
+  <div class="modal fade" id="job4Modal" tabindex="-1" role="dialog" aria-labelledby="job4ModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="job4ModalLabel">SAAS Development & Marketing - Fiverr</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h5>Sept 2022 - Present</h5>
+            <hr>
+            <ul class="job-details">
+              <li>
+                <div>
+                  <h4>General Tasks</h4>
+                  <ul>
+                    <li>Communicating with clients to understand project requirements and scope.</li>
+                    <li>Designing and architecting software solutions.</li>
+                    <li>Writing clean, efficient, and maintainable Python code.</li>
+                    <li>Developing and implementing software applications using Python.</li>
+                    <li>Collaborating with other developers and team members.</li>
+                    <li>Performing code reviews and providing constructive feedback.</li>
+                    <li>Testing and debugging code to ensure functionality and quality.</li>
+                    <li>Optimizing code for performance improvements.</li>
+                    <li>Integrating third-party APIs and services into applications.</li>
+                    <li>Creating and maintaining databases using Python libraries like SQLAlchemy.</li>
+                    <li>Implementing and documenting RESTful APIs.</li>
+                    <li>Working with version control systems like Git for code management.</li>
+                    <li>Writing comprehensive documentation for codebases and projects.</li>
+                    <li>Troubleshooting and resolving technical issues and bugs.</li>
+                    <li>Participating in client meetings and project discussions.</li>
+                    <li>Providing technical guidance and mentorship to junior developers.</li>
+                    <li>Keeping up-to-date with the latest Python trends and best practices.</li>
+                    <li>Managing project timelines and delivering tasks within deadlines.</li>
+                    <li>Researching and evaluating new tools and technologies for project improvement.</li>
+                    <li>Maintaining confidentiality and adhering to ethical and professional standards.</li>
+                    <li>Engaging in continuous learning and professional development.</li>
+                  </ul>
+                  <h4>Advanced Tasks</h4>
+                  <ul>
+                    <li>Developing scalable and high-performance Python applications.</li>
+                    <li>Implementing advanced data structures and algorithms.</li>
+                    <li>Designing and building complex web applications using Python frameworks like Django or Flask.</li>
+                    <li>Building and deploying machine learning models using Python libraries such as scikit-learn or TensorFlow.</li>
+                    <li>Performing data analysis and manipulation on large datasets using Python libraries like Pandas or NumPy.</li>
+                    <li>Creating interactive data visualizations using libraries like Matplotlib or Plotly.</li>
+                    <li>Integrating natural language processing (NLP) techniques into applications using Python libraries like NLTK or spaCy.</li>
+                    <li>Implementing web scraping and data extraction using Python libraries like BeautifulSoup or Scrapy.</li>
+                    <li>Working with cloud platforms (such as AWS, Azure, or Google Cloud) to deploy and manage Python applications.</li>
+                    <li>Optimizing code for distributed computing and parallel processing.</li>
+                    <li>Implementing security measures and best practices in Python applications.</li>
+                    <li>Building and deploying RESTful APIs with advanced authentication and authorization mechanisms.</li>
+                    <li>Developing real-time applications using technologies like WebSockets or asynchronous frameworks like asyncio.</li>
+                    <li>Implementing continuous integration and deployment (CI/CD) pipelines for efficient software delivery.</li>
+                    <li>Designing and implementing microservices architectures using Python and related frameworks.</li>
+                    <li>Working with containerization technologies like Docker for application deployment.</li>
+                    <li>Implementing automated testing frameworks and practices, including unit tests, integration tests, and end-to-end tests.</li>
+                    <li>Building chatbots or conversational agents using Python libraries like Rasa or ChatterBot.</li>
+                    <li>Implementing recommendation systems and personalization algorithms using Python.</li>
+                    <li>Contributing to open-source Python projects and collaborating with the community.</li>
+                    <li>Providing expert-level consultancy and guidance on Python-related projects and technologies.</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="job5Modal" tabindex="-1" role="dialog" aria-labelledby="job5ModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="job5ModalLabel">Direct Sales Associate - Executive Acquisitions</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h5>June 2023 - July 2023</h5>
+          <hr>
+          <ul class="job-details">
+            <li>
+              <h4>Prospect Research</h4>
+              <p>Identify potential clients and leads through market research and database analysis.</p>
+            </li>
+            <li>
+              <h4>Cold Calling</h4>
+              <p>Initiate contact with potential clients via phone calls to introduce products/services and schedule appointments.</p>
+            </li>
+            <li>
+              <h4>Product Presentation</h4>
+              <p>Deliver compelling presentations to potential clients, highlighting the benefits and features of the offerings.</p>
+            </li>
+            <li>
+              <h4>Relationship Building</h4>
+              <p>Cultivate strong relationships with clients through regular communication and follow-ups.</p>
+            </li>
+            <li>
+              <h4>Needs Assessment</h4>
+              <p>Understand the unique needs of each client and tailor product recommendations accordingly.</p>
+            </li>
+            <li>
+              <h4>Negotiation</h4>
+              <p>Collaborate with clients to reach mutually beneficial terms and pricing agreements.</p>
+            </li>
+            <li>
+              <h4>Order Processing</h4>
+              <p>Manage the order placement process, ensuring accuracy and timely delivery of products/services.</p>
+            </li>
+            <li>
+              <h4>Sales Tracking</h4>
+              <p>Maintain accurate records of sales activities, leads, and client interactions in CRM systems.</p>
+            </li>
+            <li>
+              <h4>Market Analysis</h4>
+              <p>Stay updated on industry trends, competitor activities, and customer preferences to refine sales strategies.</p>
+            </li>
+            <li>
+              <h4>Upselling/Cross-selling</h4>
+              <p>Identify opportunities to upsell or cross-sell additional products/services to existing clients.</p>
+            </li>
+            <li>
+              <h4>Attend Networking Events</h4>
+              <p>Participate in trade shows, conferences, and industry events to expand the client base.</p>
+            </li>
+            <li>
+              <h4>Territory Management</h4>
+              <p>Strategically allocate time and resources to effectively cover and penetrate assigned sales territories.</p>
+            </li>
+            <li>
+              <h4>Customer Feedback</h4>
+              <p>Gather feedback from clients to enhance product offerings and improve customer satisfaction.</p>
+            </li>
+            <li>
+              <h4>Training Sessions</h4>
+              <p>Conduct training sessions for clients on product usage, benefits, and best practices.</p>
+            </li>
+            <li>
+              <h4>Goal Setting</h4>
+              <p>Establish sales targets and work towards achieving or exceeding them on a regular basis.</p>
+            </li>
+            <li>
+              <h4>Reporting</h4>
+              <p>Generate regular sales reports and performance metrics for management review.</p>
+            </li>
+            <li>
+              <h4>Continuous Learning</h4>
+              <p>Stay updated on product knowledge, sales techniques, and industry developments to enhance selling skills.</p>
+            </li>
+            <li>
+              <h4>Problem Resolution</h4>
+              <p>Address client concerns and issues promptly, coordinating with relevant departments for solutions.</p>
+            </li>
+            <li>
+              <h4>Follow Company Policies</h4>
+              <p>Adhere to company policies, ethical guidelines, and sales procedures in all interactions.</p>
+            </li>
+            <li>
+              <h4>Collaborate with Team</h4>
+              <p>Work closely with marketing, customer service, and other departments to ensure a seamless customer experience.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="job6Modal" tabindex="-1" role="dialog" aria-labelledby="job6ModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="job6ModalLabel">Office Administrator & Receptionist - DSS</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h5>July 2023 - Aug 2023</h5>
+          <hr>
+          <ul class="job-details">
+            <li>
+              <h4>Office Administrator - Schedule Management</h4>
+              <p>Coordinate and manage appointments, meetings, and conference room bookings.</p>
+            </li>
+            <li>
+              <h4>Receptionist - Front Desk Operations</h4>
+              <p>Greet visitors, answer phone calls, and direct inquiries to appropriate personnel.</p>
+            </li>
+            <li>
+              <h4>Office Administrator - Office Supplies</h4>
+              <p>Monitor and replenish office supplies, ensuring adequate stock levels.</p>
+            </li>
+            <li>
+              <h4>Receptionist - Visitor Check-in</h4>
+              <p>Check in guests, issue visitor badges, and notify employees of guest arrivals.</p>
+            </li>
+            <li>
+              <h4>Office Administrator - Data Entry</h4>
+              <p>Input and maintain accurate data in databases and spreadsheets.</p>
+            </li>
+            <li>
+              <h4>Receptionist - Handling Mail</h4>
+              <p>Sort, distribute, and manage incoming and outgoing mail and packages.</p>
+            </li>
+            <li>
+              <h4>Office Administrator - Travel Arrangements</h4>
+              <p>Coordinate travel arrangements, including flights, accommodations, and itineraries.</p>
+            </li>
+            <li>
+              <h4>Receptionist - Message Taking</h4>
+              <p>Take messages and relay important information to the appropriate staff members.</p>
+            </li>
+            <li>
+              <h4>Office Administrator - Filing and Records</h4>
+              <p>Organize and maintain physical and digital filing systems for documents and records.</p>
+            </li>
+            <li>
+              <h4>Receptionist - Appointment Scheduling</h4>
+              <p>Schedule appointments for clients or employees and manage calendar availability.</p>
+            </li>
+            <li>
+              <h4>Office Administrator - Budget Tracking</h4>
+              <p>Assist in monitoring and managing office expenses and budget allocation.</p>
+            </li>
+            <li>
+              <h4>Receptionist - Telephone Handling</h4>
+              <p>Handle and route phone calls to the appropriate departments or individuals.</p>
+            </li>
+            <li>
+              <h4>Office Administrator - Meeting Coordination</h4>
+              <p>Coordinate and prepare materials for meetings, including agendas and presentations.</p>
+            </li>
+            <li>
+              <h4>Receptionist - Visitor Assistance</h4>
+              <p>Provide assistance and information to visitors, helping them navigate the office premises.</p>
+            </li>
+            <li>
+              <h4>Office Administrator - Vendor Communication</h4>
+              <p>Communicate with vendors, suppliers, and service providers for office-related needs.</p>
+            </li>
+            <li>
+              <h4>Receptionist - Front Desk Appearance</h4>
+              <p>Ensure the reception area is neat, organized, and presents a professional image.</p>
+            </li>
+            <li>
+              <h4>Office Administrator - Employee Support</h4>
+              <p>Assist employees with administrative tasks, such as expense reports and documentation.</p>
+            </li>
+            <li>
+              <h4>Receptionist - Security Monitoring</h4>
+              <p>Monitor security systems and procedures to ensure a safe environment for employees and visitors.</p>
+            </li>
+            <li>
+              <h4>Office Administrator - Event Coordination</h4>
+              <p>Assist in planning and organizing office events, workshops, and team-building activities.</p>
+            </li>
+            <li>
+              <h4>Receptionist - Multi-Tasking</h4>
+              <p>Juggle multiple tasks efficiently, such as handling phone calls, visitors, and administrative duties simultaneously.</p>
+            </li>
+          </ul>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
