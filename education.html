@@ -1,40 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="styles/styles.css">
-  <title>Education</title>
-</head>
-<body>
-  <nav>
-    <ul>
-      <li><a href="index.html">Experience</a></li>
-      <li><a href="skills.html">Skills</a></li>
-      <li><a href="education.html">Education</a></li>
-      <li><a href="about.html">About Me</a></li>
-    </ul>
-  </nav>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Education</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Experience</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="education.html">Education</a></li>
+      </ul>
+    </nav>
+    <div class="card edu-card">
+      <h3>High School Diploma</h3>
+      <p>
+        Location:
+        <a href="https://goo.gl/maps/ub396SyMZWrxiFF38" target="_blank">
+          Montreal, Canada
+        </a>
+      </p>
+      <p>Year Completed: 2021</p>
+      <p>GPA: 3.0</p>
+      <p>Average Percent Grade: 80%</p>
+      <p>
+        Best Subject:
+        <a href="https://sites.google.com/swlsb.ca/secondarymathresources/home/secondary-5-cst?authuser=0" target="_blank">
+          CST Mathematics
+        </a>
+      </p>
+      <p>Worst Subject:
+        <a href="https://en.wikipedia.org/wiki/Spanish_language" target="_blank">
+          Spanish
+        </a>
+      </p>
+    </div>
+    <hr>
+    <h3 class="category-title">Books I've Read</h3>
+    <hr>
+    <div class="book-container row">
 
-  <div class="education">
-    <div class="certification">
-      <div class="dropdown">
-        <button class="dropdown-btn" onclick="toggleContent(1)">Diploma - June 2021</button>
-        <div id="1" class="dropdown-content container">
-          <p>
-            I graduated from high school in Montreal, Canada in June 2021.
-            I did graduate during the covid-19 pandemic so we were unable to take the final exams,
-            which is why our GPAs took a hit.
-          </p>
-          <br>
-          <p>GPA: 3.3</p>
-          <p>Average Percent Grade: 87%</p>
-          <p>Best Subject: CST Mathematics</p>
-          <p>Worst Subject: French</p>
+      <div class="col-sm-6">
+        <div class="book card" style="width: 18rem;">
+          <img class="book card-img-top" src="/resources/pentest-plus.jpeg" alt="Card image cap">
+          <div class="book card-body">
+            <h5 class="book card-title">CompTIA PenTest+ Certification Passport (exam PT0-001)</h5>
+            <p class="book card-text">Author: Heather Linn</p>
+            <a href="https://www.google.ca/books/edition/CompTIA_PenTest+_Certification_Passport/JiBBxQEACAAJ?hl=en" target="_blank" class="btn btn-primary">Details</a>
+          </div>
         </div>
       </div>
+
+      <div class="col-sm-6">
+        <div class="book card" style="width: 18rem;">
+          <img class="book card-img-top" src="/resources/investing-in-etfs.jpeg" alt="Card image cap">
+          <div class="book card-body">
+            <h5 class="book card-title">Investing in ETFs for Dummies</h5>
+            <p class="book card-text">Author: Russell Wild</p>
+            <a href="https://www.google.ca/books/edition/Exchange_Traded_Funds_For_Dummies/1Eke0kqbTN4C?hl=en&gbpv=0" target="_blank" class="btn btn-primary">Details</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="book card" style="width: 18rem;">
+          <img class="book card-img-top" src="/resources/personal-finance-20-30.jpeg" alt="Card image cap">
+          <div class="book card-body">
+            <h5 class="book card-title">Personal Finance in your 20s & 30s</h5>
+            <p class="book card-text">Author: Eric Tyson</p>
+            <a href="https://www.google.ca/books/edition/Personal_Finance_in_Your_20s_30s_For_Dum/PWwrEAAAQBAJ?hl=en&gbpv=1&dq=Personal+Finance+in+your+20s+%26+30s&printsec=frontcover" target="_blank" class="btn btn-primary">Details</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="book card" style="width: 18rem;">
+          <img class="book card-img-top" src="/resources/frontier-markets.jpeg" alt="Card image cap">
+          <div class="book card-body">
+            <h5 class="book card-title">Frontier Markets for Dummies</h5>
+            <p class="book card-text">Author: Gavin Graham</p>
+            <a href="https://www.google.ca/books/edition/Frontier_Markets_For_Dummies/JtvjAgAAQBAJ?hl=en&gbpv=1&dq=Frontier+markets+for+dummies&printsec=frontcover" target="_blank" class="btn btn-primary">Details</a>
+          </div>
+        </div>
+      </div>
+
     </div>
-  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   <script src="scripts/script.js"></script>
 </body>
 </html>
