@@ -1,180 +1,952 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Job Experience</title>
-  <link rel="stylesheet" type="text/css" href="/styles/styles.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>DandyDev Portfolio</title>
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VXYYW0TCL4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-VXYYW0TCL4');
-</script>
 <body>
-  <nav>
-    <ul>
-      <li><a href="index.html">Experience</a></li>
-      <li><a href="skills.html">Skills</a></li>
-      <li><a href="education.html">Education</a></li>
-    </ul>
-  </nav>
-  <h3 class="category-title">Personal Projects</h3>
-  <div class="container mt-4">
-    <div class="table-responsive">
-      <table class="table table-striped table-bordered">
-        <thead>
-          <tr>
-              <th> title </th>
-              <th> stack </th>
-              <th> status </th>
-              <th> version </th>
-              <th> download </th>
-          </tr>
-      </thead>
-        <tbody>
-          <tr>
-            <td>
-              <a href="https://github.com/dandyDev-1/torchBot" target="_blank">torchBot</a>
-            </td>
-            <td>
-              <div>
-                <ul class="ul stack">
-                  <li class="stack-item"><img src="/resources/py.png"/></li>
-                  <li class="stack-item"><img src="/resources/json.png"/></li>
-                </ul>
-              </div>
-            </td>
-            <td>
-              <p class="status beta">Beta</p>
-            </td>
-            <td><strong>1.1</strong></td>
-            <td>
-              <a href="https://github.com/dandyDev-1/torchBot/archive/refs/heads/main.zip">
-                <button class="btn btn-primary" >Download</button>
-              </a>
 
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <a href="https://github.com/dandyDev-1/EMA-Backtester" target="_blank">EMA Backtester</a>
-            </td>
-            <td>
-              <div>
-                <ul class="ul stack">
-                  <li class="stack-item"><img src="/resources/py.png"/></li>
-                </ul>
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/lock-web.png" alt="DandyDev" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="DandyDev">DandyDev</h1>
+
+          <p class="title">Software Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:dandyrandy223@gmail.com" class="contact-link">dandyrandy223@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">LinkedIn</p>
+
+              <a href="https://www.linkedin.com/in/trebrown100/" class="contact-link">https://www.linkedin.com/in/trebrown100/</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Github</p>
+
+              <a href="https://github.com/DandyDev-1" class="contact-link">https://github.com/DandyDev-1</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Montreal</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm DandyDev, a Software Engineer with experience spanning five years.In Database Operations, I excel in tasks such as data entry, analysis, extraction, and database administration, leveraging my expertise to transform raw data into actionable insights.
+          </p>
+
+          <p>
+            My proficiency extends to Web Development, where I navigate platforms like Shopify, Wix, and utilize technologies such as HTML, CSS, JS, PHP, React, Vue, Next.js, and Svelte. With a keen eye for detail and a commitment to excellence, I not only create visually appealing websites but also ensure they are optimized for search engines (SEO). In Software Engineering, I am fluent in JavaScript, Python, SQL, and C++, crafting robust solutions that meet the unique needs of each project. 
+          </p>
+
+          <p>
+            Additionally, my focus on Cybersecurity involves conducting thorough security audits and penetration testing to fortify digital assets. Specializing in Backend Development, I design APIs, microservices, and scalable architectures. Complemented by my skills in Marketing, which cover information systems, product and service marketing, as well as ERP/CRM management and development, With a proven track record and a passion for innovation, I am dedicated to delivering impactful solutions that drive success in the ever-evolving landscape of software engineering.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
               </div>
-            </td>
-            <td>
-              <p class="status beta">Complete</p>
-            </td>
-            <td><strong>1.0</strong></td>
-            <td>
-              <a href="https://github.com/dandyDev-1/EMA-Backtester/archive/refs/heads/main.zip">
-                <button class="btn btn-primary">Download</button>
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <a href="https://github.com/dandyDev-1/Mass-Batch-Backtester" target="_blank">Mass Batch Backtester</a>
-            </td>
-            <td>
-              <div>
-                <ul class="ul stack">
-                  <li class="stack-item"><img src="/resources/py.png"/></li>
-                </ul>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Software Engineering</h4>
+
+                <p class="service-item-text">
+                  The most modern and high-quality design made at a professional level.
+                </p>
               </div>
-            </td>
-            <td>
-              <p class="status beta">Complete</p>
-            </td>
-            <td><strong>1.0</strong></td>
-            <td>
-              <a href="https://github.com/dandyDev-1/Mass-Batch-Backtester/archive/refs/heads/main.zip">
-                <button class="btn btn-primary">Download</button>
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <a href="https://github.com/dandyDev-1/IP-Checker/blob/main/ipv4_checker.py" target="_blank">IP Checker</a>
-            </td>
-            <td>
-              <div>
-                <ul class="ul stack">
-                  <li class="stack-item"><img src="/resources/py.png"/></li>
-                </ul>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
               </div>
-            </td>
-            <td>
-              <p class="status beta">Beta</p>
-            </td>
-            <td><strong>1.0</strong></td>
-            <td>
-              <a href="https://github.com/dandyDev-1/Mass-Batch-Backtester/archive/refs/heads/main.zip">
-                <button class="btn btn-primary">Download</button>
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <a href="https://github.com/dandyDev-1/NumberGuessingGame" target="_blank">Number Guessing Game</a>
-            </td>
-            <td>
-              <div>
-                <ul class="ul stack">
-                  <li class="stack-item"><img src="/resources/html.png"/></li>
-                  <li class="stack-item"><img src="/resources/css.png"/></li>
-                  <li class="stack-item"><img src="/resources/js.png"/></li>
-                </ul>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of websites at the professional level.
+                </p>
               </div>
-            </td>
-            <td>
-              <p class="status beta">Complete</p>
-            </td>
-            <td><strong>1.2</strong></td>
-            <td>
-              <a href="https://github.com/dandyDev-1/NumberGuessingGame/archive/refs/heads/main.zip">
-                <button class="btn btn-primary">Download</button>
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <a href="https://github.com/dandyDev-1/crmOne" target="_blank">CrmOne</a>
-            </td>
-            <td>
-              <div>
-                <ul class="ul stack">
-                  <li class="stack-item"><img src="/resources/py.png"/></li>
-                </ul>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
               </div>
-            </td>
-            <td>
-              <p class="status beta">Beta</p>
-            </td>
-            <td><strong>1.2</strong></td>
-            <td>
-              <a href="https://github.com/dandyDev-1/crmOne/archive/refs/heads/main.zip">
-                <button class="btn btn-primary">Download</button>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">CyberSecurity</h4>
+
+                <p class="service-item-text">
+                  Professional security auditing of applications for the web and mobile devices.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Marketing</h4>
+
+                <p class="service-item-text">
+                  The marketing of products and services for my team and various firms.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Edward V</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    DandyRandy was hired to create a backend service. I was very pleased with the work done. he has a
+                    lot of experience and is very concerned about the needs of client. He responds at a timely matter and alerts me before doing anything critical to the services. 10/10 would recommend.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily M</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    I had the pleasure of working with DandyDev to create a website for my business, and I couldn't be more pleased with the exceptional service he provided. DandyDev team was professional, responsive, and truly understood my vision. They went above and beyond to ensure the website not only met but exceeded my expectations. The attention to detail and commitment to delivering a high-quality product were evident throughout the entire process. I highly recommend DandyDev for anyone in need of top-notch web development services.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Queta O</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    It was great working with DandyDev. he ensured that every detail of was met. The website not only reflects the professionalism of my brand but also incorporates innovative design elements that set it apart. The communication throughout the process was seamless, and the final result surpassed my expectations. I highly recommend DandyDev for their expertise, creativity, and commitment to delivering outstanding websites.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Enrique W</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    I am delighted to express my satisfaction with the microservice developed by DandyDev for me. Enrique and the team demonstrated an impressive level of expertise and dedication throughout the entire process. The microservice they delivered not only met but surpassed my expectations in terms of functionality and efficiency. Working with DandyDev was a seamless experience, from initial discussions to the final implementation. I am truly pleased with the results, and the microservice has proven to be a valuable asset to my project. 
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel L" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel L</h4>
+
+              <time datetime="2023-06-14">14 June, 2023</time>
+
+              <div data-modal-text>
+                <p></p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
               </a>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">EMCS</h4>
+
+              <span>2018 — 2021</span>
+
+              <p class="timeline-text">
+                High-School Diploma / GED
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">TryHackMe Cyber Security Training</h4>
+
+              <span>2019 — 2024</span>
+
+              <p class="timeline-text">
+                THM is where I learned cyber security starting from a basic level to an SOC Analyst 1
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">FreeCodeCamp</h4>
+
+              <span>2019 - 2024</span>
+
+              <p class="timeline-text">
+                FCC is where I learn the best practices of software engineering in most languages.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Brokerage Administrator</h4>
+
+              <span>2015 — Present</span>
+
+              <p class="timeline-text">
+                Utilized SAP/ERP systems to parse cross-border air, sea, and land shipments for a large international firm.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">CMO - Chief Management Officer</h4>
+
+              <span>2019 — 2024</span>
+
+              <p class="timeline-text">
+                I act as the CMO for a small firm that imports commodities to various countries.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Software Engineer & Systems Admin</h4>
+
+              <span>2019 - 2023</span>
+
+              <p class="timeline-text">
+                Developed, impletemented and mainatined software and linux systems for an small commodity firm.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Software Engineering</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web Development</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Marketing</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Automation</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Number Guessing Game</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Finance Manager</h3>
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Reddit Bot</h3>
+                <p class="project-category">applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">EMA Backtester</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">SIRP</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">IP Checker</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">CrmOne</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Task Manager</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Mass Batch Backtester</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d178787.43121322917!2d-73.87668382728177!3d45.559304611048326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a541c64b70d%3A0x654e3138211fefef!2sMontreal%2C%20QC!5e0!3m2!1sen!2sca!4v1704244971043!5m2!1sen!2sca" width="600" height="450" loading="lazy"></iframe>  
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" onsubmit="sendEmail(); reset(); return false;" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" id="fullname" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" id="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" id="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
     </div>
-  </div>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>
